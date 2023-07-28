@@ -2,21 +2,21 @@
 
 if [ ! -f adventureworks.bak ]; then
     echo "Downloading AdventureWorks OLTP backup file from Microsoft..."
-    wget https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2017.bak -O adventureworks.bak -q
+    ./wget.exe https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak -O adventureworks.bak -q
     echo "Download complete."
 else
     echo "AdventureWorks OLTP backup file already downloaded. Skipping."
 fi
 if [ ! -f adventureworks-dw.bak ]; then
     echo "Downloading AdventureWorks data warehouse backup file from Microsoft..."
-    wget https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak -O adventureworks-dw.bak -q
+    ./wget.exe https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2022.bak -O adventureworks-dw.bak -q
     echo "Download complete."
 else
     echo "AdventureWorks data warehouse backup file already downloaded. Skipping."
 fi
 if [ ! -f adventureworks-light.bak ]; then
     echo "Downloading AdventureWorks light backup file from Microsoft..."
-    wget https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2017.bak -O adventureworks-light.bak -q
+    ./wget.exe https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak -O adventureworks-light.bak -q
     echo "Download complete."
 else
     echo "AdventureWorks light backup file already downloaded. Skipping."

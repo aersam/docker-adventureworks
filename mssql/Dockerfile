@@ -1,6 +1,7 @@
-FROM mcr.microsoft.com/mssql/server:2017-latest
+FROM mcr.microsoft.com/mssql/server:2022-latest
 ARG BAK_FILE
 ARG SA_PASSWORD
+ENV MSSQL_PID=Express
 ENV SA_PASSWORD=${SA_PASSWORD}
 EXPOSE 1433
 WORKDIR /
